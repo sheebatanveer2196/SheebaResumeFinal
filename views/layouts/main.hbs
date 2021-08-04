@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SandStorm Bootstrap Theme from bootswatch.com -->
+    <link rel='stylesheets' href="/stylesheets/style.css" />
+    <link rel='stylesheets' href="/stylesheets/bootstrap.min.css" />
+</head>
+
+<style>
+    .mainContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 100px;
+    }
+
+    .Introduction {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        margin-bottom: 20px;
+        padding: 40px;
+        top: 50%;
+        justify-content: space-around;
+        background-image: url("BG3.png");
+
+    }
+
+    .statementContainer {
+        height: 200px;
+        width: 800px;
+        justify-content: center;
+        align-content: center;
+        border-radius: 10px;
+        margin-top: 80px;
+        opacity: 0.5;
+        background-color: white;
+    }
+
+    .details {
+        justify-content: space-around;
+        margin-top: 80px;
+    }
+
+    .name {
+        margin-top: 0px;
+        font-size: medium;
+        color: white;
+    }
+
+    .statement {
+        margin-top: 80px;
+        color: black;
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+
+    .fa {
+        padding: 5px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 10px;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-skype {
+        background: #00aff0;
+        color: white;
+    }
+
+    .formContainer {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .icon {
+        padding: 10px;
+        background: white;
+        color: black;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .textField {
+        width: 40%;
+        outline: none;
+    }
+
+    .textArea {
+        width: 40%;
+        outline: none;
+        margin-left: 54px;
+    }
+
+
+    .Projects {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2px;
+        background-image: url(codeBG.jpg);
+
+    }
+
+    .Blogs {
+        display: flex;
+        background-color: white;
+        padding: 2px;
+        justify-content: center;
+         background: linear-gradient(to top right, #b58ecc 0%, #5de6de 100%);
+    }
+
+    .Blogs2 {
+        width: 50%;
+        Display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .projectCard {
+        box-shadow: 2px 2px 2px 2px rgba(26, 25, 25, 0.2);
+        transition: 0.1s;
+        width: 250px;
+        border-radius: 25px;
+        opacity: 0.9;
+    }
+
+    .projectImageCard {
+        width: 100%;
+        height: 240px;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .projectCard2 {
+        box-shadow: 2px 2px 2px 2px rgba(26, 25, 25, 0.2);
+        transition: 0.1s;
+        width: 250px;
+        border-radius: 25px;
+    }
+
+    .projectImageCard2 {
+        width: 100%;
+        height: 240px;
+        border-radius: 25px;
+    }
+
+     .projectCard3 {
+        box-shadow: 2px 2px 2px 2px rgba(26, 25, 25, 0.2);
+        transition: 0.1s;
+        width: 250px;
+        border-radius: 25px;
+    }
+
+    .projectImageCard3 {
+        width: 100%;
+        height: 150px;
+        border-radius: 25px 25px 0 0 ;
+    }
+
+    .card:hover {
+        box-shadow: 2px 2px 2px 2px rgba(26, 25, 25, 0.2);
+    }
+
+
+    .projectDataContainer {
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        opacity: 0.8;
+    }
+
+    .projectDataContainer3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    a {
+        color: black
+    }
+
+    .Skills {
+        display: flex;
+        background-color: white;
+        padding: 2px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Skills2 {
+        width: 100%;
+        Display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Skills3 {
+        width: 100%;
+        Display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+
+    .connect {
+        width: 60%;
+        justify-content: center;
+        margin-left: 40%;
+        padding-top: 100px;
+    }
+
+    .submitButton {
+        background-color: black;
+        color: white;
+        border: none;
+        width: 20%;
+        opacity: 0.9;
+        border-radius: 20px;
+        margin-left: 150px;
+    }
+
+    .submitButton:hover {
+        opacity: 1;
+    }
+
+    .footer {
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        margin-top: 50px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .color {
+        color: white;
+    }
+
+    .footerData{
+    }
+
+    .footerNav {
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 40%;
+        height: 80px;
+    }
+    .footIcons{
+        width:30%;
+        background-color: green;
+        justify-content: space-evenly;
+        margin-left: 500px;
+    }
+
+</style>
+
+<head>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</head>
+
+<body>
+    {{{body}}}
+</body>
+<footer class="footer">
+   <ul class="list-inline">
+        <li class="list-inline-item "><a class="color" href="#">Home</a></li>
+        <li class="list-inline-item "><a class="color" href="#">My Skills</a></li>
+        <li class="list-inline-item "><a class="color" href="#">Projects</a></li>
+        <li class="list-inline-item "><a class="color" href="#">Contact Me</a></li>
+    </ul>
+    <p class="copyright">Sheeba Tanveer  © 2021</p>
+</footer>
+
+</html>

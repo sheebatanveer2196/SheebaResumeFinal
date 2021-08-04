@@ -1,0 +1,34 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.cardBackground {
+    width: 80%;
+    height: 420px;
+    background-color: #4b636d;
+}
+
+.Introduction {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    background-color: #FFF0F0;
+    margin-bottom: 20px;
+    padding: 40px
+}
+
+.statement {
+    flex: 1;
+    height: 200px;
+    width: 100px;
+    background-color: indianred;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+}
